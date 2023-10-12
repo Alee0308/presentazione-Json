@@ -1,0 +1,39 @@
+#cartaIdentita {
+    width: 300px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+#cartaIdentita h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#cartaIdentita div {
+    margin-bottom: 15px;
+}
+
+#cartaIdentita label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+#cartaIdentita span {
+    font-weight: normal;
+    display: block;
+    font-size: 16px;
+    color: #555;
+}
+
+#cartaIdentita p {
+    margin: 0;
+    padding: 0;
+}
