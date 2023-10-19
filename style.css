@@ -1,39 +1,75 @@
-#cartaIdentita {
-    width: 300px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    margin: 0 auto;
-    text-align: center;
+/* Stile per il corpo della pagina */
+body {
     font-family: Arial, sans-serif;
-}
-
-#cartaIdentita h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-#cartaIdentita div {
-    margin-bottom: 15px;
-}
-
-#cartaIdentita label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-#cartaIdentita span {
-    font-weight: normal;
-    display: block;
-    font-size: 16px;
-    color: #555;
-}
-
-#cartaIdentita p {
+    background-color: #f5f5f5;
     margin: 0;
     padding: 0;
+}
+
+/* Stile per il contenitore della carta d'identità */
+#cartaIdentita {
+    
+    width: 400px;
+    margin: 30px auto;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Stile per il titolo */
+h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Stile per l'immagine della carta d'identità */
+#gatto {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+}
+
+/* Stile per le label */
+label {
+    font-weight: bold;
+}
+
+/* Stile per i dati */
+span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+/* Stile per il separatore tra i campi */
+div:not(:last-child) {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* Stile per il tipo di documento */
+#tipoDocumento {
+    font-style: italic;
+}
+
+/* Stile per il footer */
+#enteEmittente {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Stile per link */
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+/* Stile per link al file JSON */
+a:hover {
+    text-decoration: underline;
 }

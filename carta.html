@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"> 
+    <title>Carta d'Identità</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="cartaIdentita">
+   
+        <h2>Carta d'Identità</h2>
+        <div id="fotoContainer" style="text-align: center;">
+            <img class="gatto" id="foto" src="immagineTPI.jpg" alt="Foto Carta d'Identità" style="width: 100px; height: 100px; display: inline-block;">
+        </div>
+        <div>
+            
+            <label>Nome:</label>
+            <span id="nome"></span>
+        </div>
+        <div>
+            <label>Data di Nascita:</label>
+            <span id="data_di_nascita"></span>
+        </div>
+        <div>
+            <label>Luogo di Nascita:</label>
+            <span id="luogo_di_nascita"></span>
+        </div>
+        <div>
+            <div>
+                <label>Sesso:</label>
+                <span id="sesso"><a id="maschio" href="https://www.youtube.com/shorts/dpHPaXuGPTY" target="_blank">Maschio</a></span>
+            </div>
+        </div>
+        <div>
+            <label>Codice Fiscale:</label>
+            <span id="codiceFiscale"></span>
+        </div>
+        <div>
+            <label>Indirizzo:</label>
+            <span id="indirizzo"></span>
+        </div>
+        <div>
+            <label>Città:</label>
+            <span id="citta"></span>
+        </div>
+        <div>
+            <label>Provincia:</label>
+            <span id="provincia"></span>
+        </div>
+        <div>
+            <label>Paese:</label>
+            <span id="paese"></span>
+        </div>
+        <div>
+            <label>Numero di Documento:</label>
+            <span id="numeroDocumento"></span>
+        </div>
+        <div>
+            <label>Data di Scadenza:</label>
+            <span id="dataScadenza"></span>
+        </div>
+        <div>
+            <label>Tipo di Documento:</label>
+            <span id="tipoDocumento"></span>
+        </div>
+        <div>
+            <label>Ente Emittente:</label>
+            <span id="enteEmittente"></span>
+        </div>
+    </div>
+
+    <script>
+        
+            // Carica i dati dalla carta d'identità dal file JSON
+            fetch('./tpi.json')
+                .then((response) => response.json())
+                .then((json) => {
+                    document.getElementById("nome").innerHTML = json.nome;
+                    document.getElementById('data_di_nascita').innerHTML = json.data_di_nascita;
+                    document.getElementById('luogo_di_nascita').innerHTML = json.luogo_di_nascita;
+                    document.getElementById('sesso').innerHTML = json.sesso;
+                    document.getElementById('codiceFiscale').innerHTML = json.codice_fiscale;
+                    document.getElementById('indirizzo').innerHTML = json.indirizzo;
+                    document.getElementById('citta').innerHTML = json.citta; 
+                    document.getElementById('provincia').innerHTML = json.provincia;
+                    document.getElementById('paese').innerHTML = json.paese;
+                    document.getElementById('numeroDocumento').innerHTML = json.numero_di_documento;
+                    document.getElementById('dataScadenza').innerHTML = json.data_di_scadenza;
+                    document.getElementById('tipoDocumento').innerHTML = json.tipo_di_documento;
+                    document.getElementById('enteEmittente').innerHTML = json.ente_emittente;
+                });
+        
+    </script>
+</body>
+</html>
